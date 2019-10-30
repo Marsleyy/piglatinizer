@@ -2,9 +2,21 @@ $( "document" ).ready(function() { //this helps your jQuery to work. Write all o
 let userinput =
  $(".input").val();
 
-
+$("#button").click(function(){})
 
 
 
 
 });
+function pigLatinConsonant(word){
+ let firstChar = word[0]
+ let result = firstChar + "ay"
+ let restOfWord = word.slice(1);
+ return restOfWord + result;
+}
+console.log(pigLatinConsonant("pig"))
+
+function pigLatinVowel(word){
+ let result = word + "ay"
+ return result;
+}
