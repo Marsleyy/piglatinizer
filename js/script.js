@@ -1,12 +1,9 @@
 $( "document" ).ready(function() { //this helps your jQuery to work. Write all of your JS code in this function.
-let userinput =
- $(".input").val();
+let userinput = $(".input").val();
 
-$("#button").click(function(){})
-
-
-
-
+$("#button").click(function(){
+    let word = $(".input").val();
+    $(".output").append(word);
 });
 function pigLatinConsonant(word){
  let firstChar = word[0]
